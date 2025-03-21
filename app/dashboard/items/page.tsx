@@ -39,7 +39,7 @@ export default function ItemsPage() {
   // This will trigger the error boundary when clicked
   const triggerError = () => {
     setErrorDemo(true);
-    throw new Error("This is a demo error in the Items page");
+    throw new Error(`This is a demo error in the Items page ${errorDemo}`);
   };
 
   // Sample items data

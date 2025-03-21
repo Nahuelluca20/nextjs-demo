@@ -9,7 +9,9 @@ export default function AboutPage() {
       <div className="mb-16 text-center">
         <h1 className="mb-4 text-4xl font-bold md:text-5xl">About YourBrand</h1>
         <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
-          We're on a mission to transform how people interact with technology.
+          {
+            "We're on a mission to transform how people interact with technology."
+          }
         </p>
       </div>
 
@@ -34,12 +36,12 @@ export default function AboutPage() {
           {/* Fake office image with gradient background */}
           <div className="relative h-[400px] w-full overflow-hidden rounded-lg bg-gradient-to-br from-primary/80 to-primary">
             {/* Fake office elements */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-primary/90 to-transparent"></div>
-            <div className="absolute left-[10%] top-[20%] h-16 w-16 rounded-md bg-white/20"></div>
-            <div className="absolute left-[30%] top-[30%] h-24 w-32 rounded-md bg-white/20"></div>
-            <div className="absolute left-[60%] top-[25%] h-20 w-20 rounded-md bg-white/20"></div>
-            <div className="absolute bottom-[30%] left-[20%] h-12 w-40 rounded-md bg-white/20"></div>
-            <div className="absolute bottom-[20%] right-[15%] h-16 w-24 rounded-md bg-white/20"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-primary/90 to-transparent" />
+            <div className="absolute left-[10%] top-[20%] h-16 w-16 rounded-md bg-white/20" />
+            <div className="absolute left-[30%] top-[30%] h-24 w-32 rounded-md bg-white/20" />
+            <div className="absolute left-[60%] top-[25%] h-20 w-20 rounded-md bg-white/20" />
+            <div className="absolute bottom-[30%] left-[20%] h-12 w-40 rounded-md bg-white/20" />
+            <div className="absolute bottom-[20%] right-[15%] h-16 w-24 rounded-md bg-white/20" />
             {/* Decorative dots pattern */}
             <div className="absolute inset-0 opacity-10">
               {Array.from({ length: 20 }).map((_, i) => (

@@ -9,13 +9,13 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-foreground/30 opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-foreground/30 opacity-80" />
 
           {/* Decorative shapes */}
-          <div className="absolute left-[10%] top-[20%] h-32 w-32 rounded-full bg-white/10"></div>
-          <div className="absolute right-[15%] top-[15%] h-16 w-16 rounded-full bg-white/10"></div>
-          <div className="absolute bottom-[30%] left-[20%] h-24 w-24 rounded-full bg-white/10"></div>
-          <div className="absolute bottom-[20%] right-[25%] h-40 w-40 rounded-full bg-white/10"></div>
+          <div className="absolute left-[10%] top-[20%] h-32 w-32 rounded-full bg-white/10" />
+          <div className="absolute right-[15%] top-[15%] h-16 w-16 rounded-full bg-white/10" />
+          <div className="absolute bottom-[30%] left-[20%] h-24 w-24 rounded-full bg-white/10" />
+          <div className="absolute bottom-[20%] right-[25%] h-40 w-40 rounded-full bg-white/10" />
 
           {/* Dots pattern */}
           {Array.from({ length: 20 }).map((_, i) => (
@@ -26,7 +26,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
                 top: `${Math.random() * 100}%`,
                 left: `${Math.random() * 100}%`,
               }}
-            ></div>
+            />
           ))}
         </div>
 
@@ -48,7 +48,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
             </div>
             <div>
               <p className="font-medium">
-                "This platform has transformed how I work."
+                {"This platform has transformed how I work."}
               </p>
               <p className="text-sm text-white/70">Jane Smith, Designer</p>
             </div>

@@ -16,13 +16,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
+const BrokenComponent = () => {
+  throw new Error("Error en componente hijo");
+};
+
 export default function ProfilePage() {
-  const [errorDemo, setErrorDemo] = useState(false);
+  const [errorDemo, setErrorDemo] = useState(true);
 
   // This will trigger the error boundary when clicked
   const triggerError = () => {
     setErrorDemo(true);
-    throw new Error("This is a demo error in the Profile page");
+    throw new Error(`This is a demo error in the Profile page ${errorDemo}`);
   };
 
   return (
@@ -32,6 +36,7 @@ export default function ProfilePage() {
         <p className="text-muted-foreground">
           Manage your account settings and preferences
         </p>
+        {/* <BrokenComponent /> */}
       </div>
 
       <div className="flex flex-col gap-6">
