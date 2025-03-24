@@ -16,9 +16,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-const BrokenComponent = () => {
-  throw new Error("Error en componente hijo");
-};
+// const BrokenComponent = () => {
+//   throw new Error("Error en componente hijo");
+// };
 
 export default function ProfilePage() {
   const [errorDemo, setErrorDemo] = useState(true);

@@ -53,11 +53,6 @@ export default async function InventoryStatus() {
         <div className="space-y-6">
           {inventory.map((item, index) => {
             const percentage = (item.stock / item.total) * 100;
-            let progressColor = "bg-green-500";
-
-            if (percentage < 15) progressColor = "bg-red-500";
-            else if (percentage < 30) progressColor = "bg-amber-500";
-            else if (percentage < 50) progressColor = "bg-blue-500";
 
             return (
               <div key={index} className="space-y-2">

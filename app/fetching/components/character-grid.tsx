@@ -40,9 +40,13 @@ interface ApiResponse {
 }
 
 async function getCharacters(page: number): Promise<ApiResponse> {
+  // const res = await fetch(
+  //   `https://rickandmortyapi.com/api/character?page=${page}`,
+  //   { next: { revalidate: 3600 } }, // Cache for 1 hour
+  // );
   const res = await fetch(
     `https://rickandmortyapi.com/api/character?page=${page}`,
-    { next: { revalidate: 3600 } }, // Cache for 1 hour
+    { cache: "no-store" },
   );
   if (!res.ok) {
     if (res.status === 404) {

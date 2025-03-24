@@ -40,6 +40,11 @@ export default function HomePage() {
             Fetching
           </Button>
         </Link>
+        <Link href="/posts">
+          <Button variant="outline" className="w-full">
+            Posts
+          </Button>
+        </Link>
       </div>
     </div>
   );

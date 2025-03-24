@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button";
 import CharacterGrid from "./components/character-grid";
 import CharacterGridSkeleton from "./components/character-grid-skeleton";
 
-export default function FetchingPage({
+export default async function FetchingPage({
   searchParams,
 }: {
-  searchParams: { page?: string };
+  searchParams: Promise<{ page?: string }>;
 }) {
-  const currentPage = Number(searchParams.page) || 1;
+  const page = (await searchParams).page;
+  const currentPage = Number(page) || 1;
 
   return (
     <div className="container mx-auto p-6">
