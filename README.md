@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Basic Demo
+
+This is a demonstration project to learn the basics of [Next.js](https://nextjs.org), bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+To start the development server:
 
 ```bash
 npm run dev
@@ -14,20 +16,30 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Basic Concepts You'll Learn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+In this demo, we'll explore:
 
-## Learn More
+- Basic Next.js project structure
+- Creating pages and routes
+- Basic components
+- Using [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+- Basic image optimization with Next.js
 
-To learn more about Next.js, take a look at the following resources:
+## Learning Resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To dive deeper into Next.js:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - official documentation
+- [Interactive Tutorial](https://nextjs.org/learn) - learn Next.js step by step
+
+## Need Help?
+
+- Check the [official documentation](https://nextjs.org/docs)
+- Visit the [Next.js GitHub repository](https://github.com/vercel/next.js)
+- Join the [Discord community](https://discord.gg/nextjs)
 
 ## Deploy on Vercel
 
