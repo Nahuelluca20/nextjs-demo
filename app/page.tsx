@@ -45,6 +45,12 @@ export default function HomePage() {
             Posts
           </Button>
         </Link>
+
+        <Link href="/loading-route">
+          <Button variant="outline" className="w-full">
+            Loading Route
+          </Button>
+        </Link>
       </div>
     </div>
   );
